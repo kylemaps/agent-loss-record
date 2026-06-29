@@ -8,8 +8,8 @@ When an AI agent fails — leaks data, takes a wrong action, gives harmful advic
 The **Agent Loss Record (ALR)** is an open, structured format for recording an AI-agent failure the way insurance records any other risk: exposure, controls, the event, severity, and dependencies. Think of it as the start of a shared track record for AI failures — a data layer the whole field can build on.
 
 ## What's here
-- `schema/` — the ALR schema (the record format).
-- `benchmark/` — a seed corpus of real, publicly documented AI-agent failures structured into the schema, plus the aggregate AI-Agent Loss Benchmark.
+- [`schema/agent-loss-record-schema.md`](schema/agent-loss-record-schema.md) — the ALR schema (the record format / unit of account).
+- [`benchmark/`](benchmark/) — real, publicly documented AI-agent failures structured into the schema: the [AI-Agent Loss Benchmark](benchmark/ai-agent-loss-benchmark.md) + the [seed corpus](benchmark/seed-corpus.md).
 
 ## Honest status (v0)
 Early, open draft. The seed corpus is built from **public incidents** and is **modeled, not measured** — public reporting gives the shape of a failure (what went wrong, what control was missing, rough severity) but not the verified dollar loss or exposure base. Those come only with real claims data. v0 proves the structure and surfaces patterns; it is not a pricing tool.
